@@ -19,7 +19,7 @@ var flagdir string
 var letterRunes = []rune("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
 
 func init() {
-	flag.StringVar(&flagdir, "dir", "~/CloudDocs/图片/表情图片/沙雕", "指定目录")
+	flag.StringVar(&flagdir, "dir", "", "指定目录")
 	flag.Parse()
 	logrus.SetLevel(logrus.DebugLevel)
 	rand.Seed(time.Now().UnixNano())
